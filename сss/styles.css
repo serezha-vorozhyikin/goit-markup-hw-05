@@ -54,8 +54,8 @@ body {
 
 /* --------header--------- */
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
   border-bottom: 1px solid #ececec;
 }
 
@@ -90,6 +90,12 @@ body {
   color: var(--accent-color);
 }
 
+.header-list .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -100,6 +106,19 @@ body {
 
 .current {
   color: var(--accent-color);
+  position: relative;
+}
+
+.current::after {
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: currentColor;
+  border-radius: 2px;
+  display: block;
+  left: 0;
 }
 
 .header-link:hover,
