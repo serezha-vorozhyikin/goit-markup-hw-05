@@ -102,6 +102,10 @@ body {
   line-height: 1.14;
   text-decoration: none;
   color: var(--first-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -149,6 +153,10 @@ body {
   line-height: 1.14;
   text-decoration: none;
   color: var(--second-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail:hover,
@@ -231,6 +239,9 @@ body {
   cursor: pointer;
   padding: 10px 32px;
   text-align: center;
+  transition-property: background, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-btn {
@@ -336,7 +347,8 @@ body {
   bottom: 0;
 
   display: flex;
-
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -348,8 +360,6 @@ body {
   background: rgba(47, 48, 58, 0.8);
   width: 370px;
   height: 70px;
-  align-items: center;
-  justify-content: center;
 }
 /*---------team----------*/
 
@@ -418,6 +428,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-icon {
@@ -465,6 +478,10 @@ body {
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition-property: color;
+  transition-duration: 1250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-social-link:hover {
@@ -493,6 +510,9 @@ body {
   align-items: center;
   width: 170px;
   height: 92px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:hover {
@@ -587,6 +607,10 @@ body {
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-box {
@@ -628,6 +652,9 @@ body {
   cursor: pointer;
   color: var(--first-text-color);
   padding: 6px 22px;
+  transition-property: color, background, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -656,6 +683,10 @@ body {
 
 .descr-link {
   display: block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .descr-link:hover,
