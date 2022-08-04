@@ -54,8 +54,8 @@ body {
 
 /* --------header--------- */
 .header {
-  /* padding-top: 25px;
-  padding-bottom: 25px; */
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -92,8 +92,8 @@ body {
 
 .header-list .header-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 
 .header-link {
@@ -115,7 +115,7 @@ body {
 
 .current::after {
   position: absolute;
-  bottom: -1px;
+  bottom: -33px;
   content: "";
   height: 4px;
   width: 100%;
@@ -343,23 +343,19 @@ body {
 }
 .work-application {
   position: absolute;
-
-  bottom: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 700;
   font-size: 14px;
+  bottom: 0px;
+  left: 0px;
   line-height: 1.14;
   text-align: center;
+  width: 100%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-
   background: rgba(47, 48, 58, 0.8);
-  width: 370px;
-  height: 70px;
+  padding-bottom: 27px;
+  padding-top: 27px;
 }
 /*---------team----------*/
 
@@ -435,6 +431,9 @@ body {
 
 .team-social-icon {
   fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover {
@@ -479,8 +478,8 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition-property: color;
-  transition-duration: 1250ms;
+  transition-property: color, border;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -510,9 +509,6 @@ body {
   align-items: center;
   width: 170px;
   height: 92px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:hover {
@@ -524,6 +520,9 @@ body {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*--------footer--------------*/
@@ -681,11 +680,39 @@ body {
   width: calc((100% - 60px) / 3);
 }
 
+.descr-item:hover .descr-item-text {
+  transform: translateY(0%);
+}
+
 .descr-link {
   display: block;
 
   transition-property: box-shadow;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.descr-item-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.descr-item-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 1250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -708,6 +735,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--first-text-color);
 }
+
 .descr-after-title {
   font-size: 16px;
   line-height: 1.87;
